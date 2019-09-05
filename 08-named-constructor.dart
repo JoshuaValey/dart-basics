@@ -2,11 +2,13 @@ import 'dart:convert';
 
 void main() {
   
-//   final wolverine = new Heroe('Logan', 'Regeneración');
+//final wolverine = new Heroe('Logan', 'Regeneración');
   final rawJson    = '{ "nombre": "Logan", "poder":"Regeneración" }';
+	
+//Esto ya es un mapa.
   Map parsedJson = json.decode( rawJson );
   
-//   print( parsedJson );
+//print( parsedJson );
   
   final wolverine = new Heroe.fromJson( parsedJson );
   
